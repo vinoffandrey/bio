@@ -1,0 +1,287 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	overflow-x: hidden;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+html,
+body {
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+}
+/*================================Подключение шрифтов===================================*/
+
+@font-face {
+	font-family: "MullerBold";
+	src: url("../assets/fonts/MullerBold.ttf");
+}
+
+@font-face {
+	font-family: "Muller Light Italic";
+	src: url("../assets/fonts/MullerLightItalic.ttf");
+}
+
+@font-face {
+	font-family: "Muller Light";
+	src: url("../assets/fonts/MullerLight.ttf");
+}
+
+/*================================Верхний блок===================================*/
+
+.top {
+	&__section {
+		position: relative;
+		height: 700px;
+	}
+
+	&__container {
+		background: url("../assets/img/top_bakground.png") 0 -40px / 100% no-repeat;
+		height: 847px;
+		width: 100%;
+		top: 0;
+		left: 0;
+		position: absolute;
+		background-position-x: center;
+		background-size: auto 847px;
+	}
+
+	&__body {
+		display: flex;
+		height: 100%;
+		align-items: center;
+		padding: 30px 0;
+	}
+
+	&__title {
+		flex: 1 1 auto;
+		font-family: "MullerBold";
+		font-size: 100px;
+		color: #001e4c;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		p {
+			opacity: 1;
+			background-color: rgba(255, 255, 255, 0.7);
+			padding: 50px 50px 20px 50px;
+			text-transform: uppercase;
+		}
+	}
+
+	&__menu {
+		&_container {
+			flex: 0 1 auto;
+			display: flex;
+			justify-content: flex-end;
+			li {
+				font-family: "MullerBold";
+				font-size: 22px;
+				color: #ffffff;
+				background-color: #001e4c;
+				padding: 20px 30px 10px 40px;
+				margin: 10px 0;
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				cursor: pointer;
+				&:hover {
+					padding-left: 2em;
+				}
+			}
+		}
+	}
+
+	&__submenu {
+		&_container {
+			display: none;
+		}
+
+		&_item {
+		}
+
+		&_title {
+		}
+
+		&_subtitle {
+		}
+	}
+}
+
+/*================================Главный блок===================================*/
+
+.main {
+	&__section {
+		position: relative;
+		height: 1016px;
+	}
+
+	&__container {
+		background: url("../assets/img/main_background2.png") 0 0 no-repeat;
+		height: 120vh;
+		width: 100%;
+		top: 0;
+		left: 0;
+		position: absolute;
+		background-position-x: center;
+		background-size: 100% 1100px;
+	}
+
+	&__body {
+		padding: 70px 20px 0 0;
+		background-color: #ffffff;
+		margin: 110px 220px 0 0;
+		display: flex;
+		align-items: flex-start;
+	}
+
+	&__left {
+		flex: 1 1 500px;
+		border-top: 1px dashed #333;
+		border-right: 3px solid #000;
+		border-bottom: 1px dashed #333;
+		margin: 0 200px 0 0;
+		&_body {
+			padding: 20px 70px 0 100px;
+		}
+
+		&_item {
+		}
+
+		&_title {
+			font-family: "MullerBold";
+			font-size: 18px;
+			color: #606060;
+			cursor: pointer;
+		}
+
+		&_subtitle {
+			margin: 30px 0 50px 0;
+			li {
+				font-family: "Muller Light";
+				font-size: 18px;
+				color: #606060;
+				margin: 20px 0;
+				cursor: pointer;
+				padding: 0 0 0 30px;
+				width: 150px;
+			}
+		}
+
+		&_active {
+		}
+	}
+
+	&__right {
+		flex: 0 1 auto;
+		&_body {
+			padding: 20px 130px 20px 0;
+		}
+
+		&_text {
+			p {
+				font-family: "Muller Light Italic";
+				font-size: 18px;
+				color: #606060;
+				margin: 0 0 20px 0;
+			}
+		}
+
+		&_name {
+			float: right;
+		}
+
+		&_photo {
+			height: 530px;
+			img {
+				width: 80%;
+			}
+		}
+	}
+}
+
+/*================================Нижний блок===================================*/
+
+.footer {
+	&__container {
+		background-color: #001e4c;
+	}
+
+	&__body {
+	}
+
+	&__column {
+	}
+
+	&__logo {
+	}
+
+	&__search {
+	}
+
+	&__menu {
+	}
+}

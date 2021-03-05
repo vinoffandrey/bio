@@ -1,0 +1,298 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  overflow-x: hidden;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+}
+
+/*================================Подключение шрифтов===================================*/
+@font-face {
+  font-family: "MullerBold";
+  src: url("../assets/fonts/MullerBold.ttf");
+}
+
+@font-face {
+  font-family: "Muller Light Italic";
+  src: url("../assets/fonts/MullerLightItalic.ttf");
+}
+
+@font-face {
+  font-family: "Muller Light";
+  src: url("../assets/fonts/MullerLight.ttf");
+}
+
+/*================================Верхний блок===================================*/
+.top__section {
+  position: relative;
+  height: 700px;
+}
+
+.top__container {
+  background: url("../assets/img/top_bakground.png") 0 -40px/100% no-repeat;
+  height: 847px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-position-x: center;
+  background-size: auto 847px;
+}
+
+.top__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0;
+}
+
+.top__title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  font-family: "MullerBold";
+  font-size: 100px;
+  color: #001e4c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top__title p {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 50px 50px 20px 50px;
+  text-transform: uppercase;
+}
+
+.top__menu_container {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.top__menu_container li {
+  font-family: "MullerBold";
+  font-size: 22px;
+  color: #ffffff;
+  background-color: #001e4c;
+  padding: 20px 30px 10px 40px;
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  cursor: pointer;
+}
+
+.top__menu_container li:hover {
+  padding-left: 2em;
+}
+
+.top__submenu_container {
+  display: none;
+}
+
+/*================================Главный блок===================================*/
+.main__section {
+  position: relative;
+  height: 1016px;
+}
+
+.main__container {
+  background: url("../assets/img/main_background2.png") 0 0 no-repeat;
+  height: 120vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-position-x: center;
+  background-size: 100% 1100px;
+}
+
+.main__body {
+  padding: 70px 20px 0 0;
+  background-color: #ffffff;
+  margin: 110px 220px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main__left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+  border-top: 1px dashed #333;
+  border-right: 3px solid #000;
+  border-bottom: 1px dashed #333;
+  margin: 0 200px 0 0;
+}
+
+.main__left_body {
+  padding: 20px 70px 0 100px;
+}
+
+.main__left_title {
+  font-family: "MullerBold";
+  font-size: 18px;
+  color: #606060;
+  cursor: pointer;
+}
+
+.main__left_subtitle {
+  margin: 30px 0 50px 0;
+}
+
+.main__left_subtitle li {
+  font-family: "Muller Light";
+  font-size: 18px;
+  color: #606060;
+  margin: 20px 0;
+  cursor: pointer;
+  padding: 0 0 0 30px;
+  width: 150px;
+}
+
+.main__right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+}
+
+.main__right_body {
+  padding: 20px 130px 20px 0;
+}
+
+.main__right_text p {
+  font-family: "Muller Light Italic";
+  font-size: 18px;
+  color: #606060;
+  margin: 0 0 20px 0;
+}
+
+.main__right_name {
+  float: right;
+}
+
+.main__right_photo {
+  height: 530px;
+}
+
+.main__right_photo img {
+  width: 80%;
+}
+
+/*================================Нижний блок===================================*/
+.footer__container {
+  background-color: #001e4c;
+}
